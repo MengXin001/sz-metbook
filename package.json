@@ -1,6 +1,6 @@
 {
   "type": "module",
-  "version": "0.0.7 Insider",
+  "version": "0.0.7",
   "devDependencies": {
     "vitepress": "^1.2.3"
   },
