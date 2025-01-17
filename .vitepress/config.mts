@@ -89,7 +89,7 @@ function nav(): DefaultTheme.NavItem[] {
       link: '/data/datasets-standard',
     },
     {
-      text: '强对流过程',
+      text: '全市主要天气过程',
       items: [
         {
           text: '2018年',
@@ -127,12 +127,13 @@ function nav(): DefaultTheme.NavItem[] {
         {
           text: '强对流',
           items: [
-            {text: '', link:''}
+            {text: 'Template', link:'/report/severe-weather/template'}
           ] 
         },
         {
           text: '台风',
           items: [
+            {text: '2309 苏拉', link:'/report/typhoon/2309'},
             {text: '2311 海葵', link:'/report/typhoon/2311'},
           ] 
         },
@@ -171,8 +172,8 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       items: [
         { text: '深圳市国家气候观象台基本观测和拓展观测业务', link: 'data/operation' },
         { text: '深圳市街道气象站代表站', link: 'data/streets-stations' },
-        { text: '1991-2020年数据集', link: 'data/datasets-standard' },
-        { text: '2020年', link: 'data/datasets-2020' },
+        { text: '深圳市国家基本站1991-2020年气候值数据集', link: 'data/datasets-standard' },
+        { text: '2020年要素统计', link: 'data/datasets-2020' },
       ]
     },
     {
@@ -233,13 +234,14 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
           text: '强对流',
           collapsed: true,
           items: [
-            {text: '', link:''}
+            {text: 'Template', link:'report/severe-weather/template'}
           ] 
         },
         {
           text: '台风',
           collapsed: true,
           items: [
+            {text: '2309 苏拉', link:'report/typhoon/2309'},
             {text: '2311 海葵', link:'report/typhoon/2311'},
           ] 
         },
