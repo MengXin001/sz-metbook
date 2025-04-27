@@ -1,6 +1,6 @@
 {
   "type": "module",
-  "version": "0.1.0 Preview",
+  "version": "0.1.0",
   "devDependencies": {
     "vitepress": "^1.2.3"
   },

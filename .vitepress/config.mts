@@ -145,6 +145,10 @@ function nav(): DefaultTheme.NavItem[] {
         {
           text: 'Radar',
           link: '/wiki/radar'
+        },
+        {
+          text: 'Station Standard',
+          link: '/wiki/station-standard'
         }
       ]
     },
@@ -252,6 +256,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       collapsed: true,
       items: [
         { text: 'Radar', link: 'wiki/radar' },
+        { text: 'Station Standard', link: 'wiki/station-standard' },
       ]
     },
     {
