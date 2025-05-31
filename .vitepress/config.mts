@@ -190,7 +190,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       items: [
         {
           text: '2017年',
-          link: 'szmet/2018'
+          link: 'szmet/2017'
         },
         {
           text: '2018年',
