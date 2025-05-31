@@ -92,6 +92,10 @@ function nav(): DefaultTheme.NavItem[] {
       text: '全市主要天气过程',
       items: [
         {
+          text: '2017年',
+          link: '/szmet/2017'
+        },
+        {
           text: '2018年',
           link: '/szmet/2018'
         },
@@ -184,6 +188,10 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       text: '全市主要天气过程',
       collapsed: false,
       items: [
+        {
+          text: '2017年',
+          link: 'szmet/2018'
+        },
         {
           text: '2018年',
           link: 'szmet/2018'
