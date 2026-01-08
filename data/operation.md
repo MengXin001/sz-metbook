@@ -24,4 +24,4 @@ aside: false
 | 空间天气观测 | 西涌               |                                |
 | 雷电灾害观测 | 梯度塔              | 雷电流测量、大气平均电场、雷电光学观测            |
 
-![](https://s1.moexin.cn/img/ShenZhen.png)
+![](https://s0.moexin.cn/img/ShenZhen.png)

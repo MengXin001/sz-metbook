@@ -18,7 +18,7 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: '/logo.png' }],
     ['meta', { name: 'theme-color', content: '#5f67ee' }],
-    ['meta', { property: 'og:locale', content: 'en' }],
+    ['meta', { property: 'og:locale', content: 'zh' }],
     [
       'script',
       { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-2Q3MG3PCWX' }
@@ -123,6 +123,10 @@ function nav(): DefaultTheme.NavItem[] {
           text: '2024年',
           link: '/szmet/2024'
         },
+        {
+          text: '2025年',
+          link: '/szmet/2025'
+        },
       ]
     },
     {
@@ -219,6 +223,10 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
         {
           text: '2024年',
           link: 'szmet/2024'
+        },
+        {
+          text: '2025年',
+          link: 'szmet/2025'
         },
         {
           text: '1874年-1943年',
