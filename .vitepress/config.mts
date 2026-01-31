@@ -1,5 +1,6 @@
 import { createRequire } from 'module'
 import { defineConfig, type DefaultTheme } from 'vitepress'
+import path from 'path'
 
 const require = createRequire(import.meta.url)
 const pkg = require('../package.json')
@@ -8,7 +9,7 @@ export default defineConfig({
   title: "深圳气象录",
 
   sitemap: {
-    hostname: 'https://szmet.moexin.cn',
+    hostname: 'https://szmet.mashirox.com',
     transformItems(items) {
       return items.filter((item) => !item.url.includes('migration'))
     }
@@ -76,6 +77,13 @@ export default defineConfig({
       lazyLoading: true
     }
   },
+  vite: {
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, './'),
+      },
+    },
+  },
 })
 
 function nav(): DefaultTheme.NavItem[] {
@@ -130,20 +138,24 @@ function nav(): DefaultTheme.NavItem[] {
       ]
     },
     {
+      text: '深圳市热带气旋风力统计',
+      link: 'data/typhoon'
+    },
+    {
       text: '专题报告',
       items: [
         {
           text: '强对流',
           items: [
-            {text: 'Template', link:'/report/severe-weather/template'}
-          ] 
+            { text: 'Template', link: '/report/severe-weather/template' }
+          ]
         },
         {
           text: '台风',
           items: [
-            {text: '2309 苏拉', link:'/report/typhoon/2309'},
-            {text: '2311 海葵', link:'/report/typhoon/2311'},
-          ] 
+            { text: '2309 苏拉', link: '/report/typhoon/2309' },
+            { text: '2311 海葵', link: '/report/typhoon/2311' },
+          ]
         },
       ]
     },
@@ -182,10 +194,10 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       text: '国家基本站概况',
       collapsed: true,
       items: [
+        { text: '深圳市国家基本气象站1991-2020年气候值数据集', link: 'data/datasets-standard' },
         { text: '深圳市国家气候观象台基本观测和拓展观测业务', link: 'data/operation' },
+        { text: '深圳市2006-2025年热带气旋风力统计', link: 'data/typhoon' },
         { text: '深圳市街道气象站代表站', link: 'data/streets-stations' },
-        { text: '深圳市国家基本站1991-2020年气候值数据集', link: 'data/datasets-standard' },
-        { text: '2020年要素统计', link: 'data/datasets-2020' },
       ]
     },
     {
@@ -254,16 +266,16 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
           text: '强对流',
           collapsed: true,
           items: [
-            {text: 'Template', link:'report/severe-weather/template'}
-          ] 
+            { text: 'Template', link: 'report/severe-weather/template' }
+          ]
         },
         {
           text: '台风',
           collapsed: true,
           items: [
-            {text: '2309 苏拉', link:'report/typhoon/2309'},
-            {text: '2311 海葵', link:'report/typhoon/2311'},
-          ] 
+            { text: '2309 苏拉', link: 'report/typhoon/2309' },
+            { text: '2311 海葵', link: 'report/typhoon/2311' },
+          ]
         },
       ]
     },
@@ -279,7 +291,6 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       text: '实验性功能',
       collapsed: true,
       items: [
-        { text: '台风网', link: '' },
       ]
     },
     { text: '编辑', link: 'edit' },
