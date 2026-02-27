@@ -70,7 +70,11 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/MengXin001/sz-metbook' }
-    ]
+    ],
+
+    search: {
+      provider: 'local'
+    }
   },
   markdown: {
     image: {
