@@ -12,6 +12,6 @@
 [Github Edit](https://github.com/MengXin001/sz-metbook)
 
 ## 2.本地编写
-将编写好的文档发送至 QQ & 邮箱`3309939798@qq.com`
+将编写好的文档发送至 QQ & 邮箱`admin@mashirox.com`
 
 此方法需要人工更新，及时性无法做到如方法 1 一样迅速。
