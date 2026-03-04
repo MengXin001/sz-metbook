@@ -178,7 +178,7 @@ import axios from 'axios'
 import { ref } from 'vue'
 
 const TITLE_TEXT = '深圳市2006-2025年热带气旋'
-const HOST = 's0.moexin.cn'
+const HOST = 's0.mashirox.com'
 
 const bar_spec = ref({
     type: 'bar',
